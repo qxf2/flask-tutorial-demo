@@ -1,6 +1,7 @@
 """
 Flask app to host my simple bio
-Habit: Develop -> test -> commit -> deploy -> test === 30 minutes
+Habit: Develop -> test locally -> commit -> push to remote -> deploy to prod -> test on prod === 30 minutes
+
 """
 
 from flask import Flask
@@ -10,7 +11,7 @@ app = Flask(__name__)
 @app.route("/")
 def index_page():
     "The search page"
-    return "Hello, I'm Arun"
+    return "<html><h1>Under construction</h1>Hello, I'm arun.<html>"
 
 #----START OF SCRIPT
 if __name__=='__main__':
